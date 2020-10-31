@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+Sistema Operacional utilizado: Ubuntu 20.04
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Para executar a aplicação utilizar o seguinte comando:
 
-## Available Scripts
+![Imagem do comando de inicio](images/start_server_react.png)
 
-In the project directory, you can run:
+Durante a execução em **http://localhost:3000/** aparecerá a seguinte tela inicial:
 
-### `npm start`
+![Imagem da tela de inicio](images/tela_inicial.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Na imagem abaixo, foi testado o uso de uma idade menor que 18 anos:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Imagem de envio de form errado](images/form_error.png)
 
-### `npm test`
+Após o envio do formulário, o seguinte alerta aparecerá, apontando o fato que a idade é menor que 18:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+![Imagem de alerta de erro](images/resp_error.png)
 
-### `npm run build`
+Na imagem abaixo, foi testado o uso de um valor não numerico no campo de idade:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+![Imagem de envio de form errado 2](images/form_error2.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Após o envio do formulário, o seguinte alerta aparecerá, apontando que o valor de idade colocado não é numérico:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+![Imagem de alerta de erro 2](images/resp_error2.png)
 
-### `npm run eject`
+As imagens a seguir mostram dois formulários enviados com sucesso:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+![Imagem de envio de form com sucesso](images/right_form.png)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Imagem de envio de form com sucesso](images/right_form2.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+Dessa maneira, essas informações foram armazenadas em um file .json acessado pelo back-end, agora, clicando no botão **Pegar valores** a lista com os dados armazenadas será apresentada, como na figura abaixo:
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+![Imagem de teste da lista](images/com_lista.png)
